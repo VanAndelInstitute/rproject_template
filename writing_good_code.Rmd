@@ -1,0 +1,99 @@
+---
+title: "How to write good code"
+author: "Eric Kort"
+date: "6/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Programming a computer is a science. Writing maintainable, understandable, 
+dependable, and efficient code is an art. The key elements of effective 
+coding are:
+
+1. Consistent format
+2. Clear but concise documentation
+3. Non-repetition
+4. Short lines, small functions
+5. Organization
+6. Unit testing, and test driven development
+
+
+## Consistent format
+
+The main choices you have for formatting relate to brackets and variable 
+names.  There are at least two ways to bracket:
+
+```{r}
+a <- function(n) {
+  print(n)
+}
+
+b <- function(n) 
+{
+  print(n)
+}
+
+a(1)
+b(1)
+
+```
+
+I prefer the first way because it is a little more concise. But the second 
+way makes it easier to see what bracket level you are at, which is 
+helpful if you have lots of nested brackets. Choose either way and stick 
+with it.
+
+The second issue is variable names. In R, all the following are options:
+
+```{r}
+
+myVariable <- 1
+my_variable <- 2
+my.variable <- 3
+
+```
+I would stay away from the last one because in several other languages, 
+`my.variable` would refer to the method or field `variable` of an object 
+called `my`. So do your future self a favor and don't get into the habit 
+of using variable names with dots in them.
+
+The first variable is called Camel Case, because the different parts of the 
+name are capitalized, giving the variable a camel like appearance. The second 
+variable is underscore format. Choose either one and stick with it.
+
+## Clear but consise documentation
+
+It is essential that you document your code. 
+Sometimes it is tempting to think "Aack...I'm just going to write a few lines 
+of code here to try something out." Before you know it, you have a hundred 
+lines of code and nothing is documented. So get into the habit of documenting 
+early and often.
+
+There are two ways to document in R. One is to create a document like this 
+one that mixes sections of text with section of code. The text provide a long 
+form documentation of the code as well as explanations of methods and results.
+Unless you are developing a new R package, the best way to go is to always be 
+working within an R Markdown document like this one. If your work leads to 
+publication, the R Markdown document is also very useful for documenting your 
+analysis methods and ensuring that your analysis can be reproduced.
+
+If you are developing an R package because you have some new functionality 
+that you want to share with colleagues or the general public, you will need 
+to put documentation in your code. Actually, documentation for an R package 
+ends up is special R Documentation files. But a tool called roxygen can 
+generate those files for you if you document your code in a specific way. 
+This way, you don't need to maintain documentation files that are separate 
+from your code, and your documentation is right with your code where you need 
+it when you are developing. See additional details 
+[here](http://r-pkgs.had.c
+}
+
+```{r}
+
+
+```
