@@ -26,9 +26,9 @@ coding are:
 ## Consistent format
 
 The main choices you have for formatting relate to brackets and variable 
-names.  There are at least two ways to bracket:
+names. There are at least two ways to bracket:
 
-```{r}
+```r
 a <- function(n) {
   print(n)
 }
@@ -50,7 +50,7 @@ with it.
 
 The second issue is variable names. In R, all the following are options:
 
-```{r}
+```r
 
 myVariable <- 1
 my_variable <- 2
@@ -85,15 +85,9 @@ analysis methods and ensuring that your analysis can be reproduced.
 If you are developing an R package because you have some new functionality 
 that you want to share with colleagues or the general public, you will need 
 to put documentation in your code. Actually, documentation for an R package 
-ends up is special R Documentation files. But a tool called roxygen can 
+ends up in special R Documentation files. But a tool called roxygen can 
 generate those files for you if you document your code in a specific way. 
 This way, you don't need to maintain documentation files that are separate 
 from your code, and your documentation is right with your code where you need 
 it when you are developing. See additional details 
-[here](http://r-pkgs.had.c
-}
-
-```{r}
-
-
-```
+[here](https://r-pkgs.had.co.nz/man.html).
